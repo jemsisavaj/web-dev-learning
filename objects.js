@@ -11,6 +11,10 @@ const student = {
     marks: 40
 };
 
+// example key & value
+console.log("Key:", "name");
+console.log("Value:", student.name);
+
 
 // object with array
 const item = {
@@ -19,23 +23,27 @@ const item = {
     colors: ["red", "pink"]
 };
 
+// example key & value
+console.log("Key:", "price");
+console.log("Value:", item.price);
+
 
 // nested objects
 const classInfo = {
-
     aman: {
         grade: "A",
         city: "delhi"
     },
-
     janki: {
         grade: "B",
         city: "surat"
     },
-
     jemsi: {
         grade: "B",
         city: "surat1"
     }
-
 };
+
+// example key & value
+console.log("Key:", "aman");
+console.log("Value:", classInfo.aman);
