@@ -1,11 +1,11 @@
 // Topic: DOM Events
 // Concepts Covered:
-// 1. Selecting element
-// 2. onclick event
-// 3. Multiple buttons using querySelectorAll
-// 4. Mouse events
+// 1. Selecting Element
+// 2. onclick Event
+// 3. Multiple Buttons using querySelectorAll
+// 4. Mouse Events
 // 5. Event Listener
-// 6. Event Listeners for elements
+// 6. Event Listeners for Elements
 // 7. "this" in Event Listeners
 // 8. Keyboard Events
 // 9. Form Events
@@ -13,14 +13,16 @@
 // Practice Questions
 
 
-// 1. Selecting element
+
+// 1. Selecting Element
 /*
 let btn1 = document.querySelector("button");
 console.dir(btn1);
 */
 
 
-// 2. onclick event
+
+// 2. onclick Event
 /*
 let btn2 = document.querySelector("button");
 
@@ -32,7 +34,8 @@ btn2.onclick = sayHello1;
 */
 
 
-// 3. Multiple buttons using querySelectorAll
+
+// 3. Multiple Buttons using querySelectorAll
 /*
 let buttons = document.querySelectorAll("button");
 
@@ -46,16 +49,18 @@ for (let btn of buttons) {
 */
 
 
-// 4. Mouse enter event
+
+// 4. Mouse Enter Event
 /*
 let btnsMouse = document.querySelectorAll("button");
 
 for (let btn of btnsMouse) {
     btn.onmouseenter = function () {
-        console.log("you entered a button");
+        console.log("You entered a button");
     };
 }
 */
+
 
 
 // 5. Event Listener
@@ -72,15 +77,16 @@ function sayName3() {
 
 for (let btn of btnsEvent) {
 
-   // btn.addEventListener("click", sayHello3);
-   // btn.addEventListener("click", sayName3);
+    // btn.addEventListener("click", sayHello3);
+    // btn.addEventListener("click", sayName3);
 
     btn.addEventListener("dblclick", function () {
-        console.log("you double clicked me");
+        console.log("You double clicked me");
     });
 
 }
 */
+
 
 
 // Practice Question: Random Color Generator
@@ -96,7 +102,8 @@ btn.addEventListener("click", function () {
     let div = document.querySelector("div");
     div.style.backgroundColor = randomColor;
 
-    console.log("color updated");
+    console.log("Color updated");
+
 });
 
 function getRandomColor() {
@@ -106,25 +113,28 @@ function getRandomColor() {
     let blue = Math.floor(Math.random() * 255);
 
     let color = `rgb(${red}, ${green}, ${blue})`;
+
     return color;
 }
 */
 
 
-// 6. Event Listeners for elements
+
+// 6. Event Listeners for Elements
 /*
 let p = document.querySelector("p");
 
 p.addEventListener("click", function () {
-    console.log("paragraph was clicked");
+    console.log("Paragraph was clicked");
 });
 
 let box = document.querySelector(".box");
 
 box.addEventListener("mouseenter", function () {
-    console.log("mouse inside div");
+    console.log("Mouse inside div");
 });
 */
+
 
 
 // 7. "this" in Event Listeners
@@ -146,33 +156,30 @@ h3.addEventListener("click", changeColor);
 */
 
 
+
 // 8. Keyboard Events
 /*
 let inp = document.querySelector("input");
 
 inp.addEventListener("keydown", function (event) {
 
-    // console.log(event);
-    // console.log("Key=", event.key);
-    // console.log("code=", event.code);
-    // console.log("key was pressed");
-
-    console.log("code = ", event.code);
+    console.log("Code =", event.code);
 
     if (event.code == "ArrowUp") {
-        console.log("character moves forward");
+        console.log("Character moves forward");
     }
     else if (event.code == "ArrowDown") {
-        console.log("character moves backward");
+        console.log("Character moves backward");
     }
     else if (event.code == "ArrowLeft") {
-        console.log("character moves left");
+        console.log("Character moves left");
     }
     else if (event.code == "ArrowRight") {
-        console.log("character moves right");
+        console.log("Character moves right");
     }
 });
 */
+
 
 
 // 9. Form Events
@@ -190,9 +197,9 @@ form.addEventListener("submit", function (event) {
     console.log(pass.value);
 
     alert(`Hi ${user.value}, your password is set to ${pass.value}`);
-
 });
 */
+
 
 
 // 10. Change and Input Events
@@ -206,51 +213,25 @@ form.addEventListener("submit", function (event) {
 let user = document.querySelector("#user");
 
 user.addEventListener("change", function () {
-    console.log("change event");
-    console.log("final value =", this.value);
+    console.log("Change event");
+    console.log("Final value =", this.value);
 });
 
 user.addEventListener("input", function () {
-    console.log("input event");
-    console.log("final value =", this.value);
+    console.log("Input event");
+    console.log("Final value =", this.value);
 });
 */
 
 
+
 // Practice Question: Live Text Preview
-// let inp = document.querySelector("#text");
-// let p = document.querySelector("p");
+/*
+let inp = document.querySelector("#text");
+let p = document.querySelector("p");
 
-// inp.addEventListener("input", function () {
-//     console.log(inp.value);
-//     p.innerText = inp.value;
-// });
-
-//practice que
-// let btn = document.querySelector("button");
-
-// btn.addEventListener("click",function(){
-//     let h3 = document.querySelector("h3");
-//     let randomColor = getRandomColor();
-//     h3.innerText = randomColor;
-
-//     let div = document.querySelector("div");
-//     div.style.backgroundColor = randomColor;
-
-//     console.log("color updated");
-// });
-
-// function getRandomColor(){
-//     let red = Math.floor(Math.random() * 255);
-//     let green = Math.floor(Math.random() * 255);
-//     let blue = Math.floor(Math.random() * 255);
-
-//     let color = `rgb(${red} , ${green} , ${blue})`;
-//     return color;
-// }   
-
-
-// console.log(event);
-    // console.log("Key=", event.key);
-    // console.log("code=", event.code);
-    // console.log("key was pressed");
+inp.addEventListener("input", function () {
+    console.log(inp.value);
+    p.innerText = inp.value;
+});
+*/
